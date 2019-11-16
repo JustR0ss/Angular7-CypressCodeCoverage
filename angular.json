@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "test-app6": {
+    "Angular7-CypressCodeCoverage": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/test-app6",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "test-app6:build"
+            "browserTarget": "Angular7-CypressCodeCoverage:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "test-app6:build:production"
+              "browserTarget": "Angular7-CypressCodeCoverage:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "test-app6:build"
+            "browserTarget": "Angular7-CypressCodeCoverage:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "test-app6-e2e": {
+    "Angular7-CypressCodeCoverage-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "test-app6:serve"
+            "devServerTarget": "Angular7-CypressCodeCoverage:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "test-app6:serve:production"
+              "devServerTarget": "Angular7-CypressCodeCoverage:serve:production"
             }
           }
         },
@@ -135,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "test-app6"
+  "defaultProject": "Angular7-CypressCodeCoverage"
 }

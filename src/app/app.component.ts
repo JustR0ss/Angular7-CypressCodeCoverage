@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'test-app6';
+  title = 'Angular7-CypressCodeCoverage';
+
+  constructor(private readonly router: Router) {
+
+  }
+
+  changePage(): void {
+    if (false) {
+      console.log('this does no execute');
+    } else {
+      this.router.navigateByUrl('/secondpage');
+    }
+    
+  }
 }
